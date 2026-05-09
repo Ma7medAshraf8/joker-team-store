@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="سلة الشراء والدفع من Joker Team.">
+  <meta property="og:title" content="السلة والدفع | Joker Team">
+  <meta property="og:image" content="images/hero.png">
+  <title>السلة والدفع | Joker Team</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230A0A0A'/%3E%3Ctext x='32' y='43' font-size='28' text-anchor='middle' fill='%23E50914' font-family='Arial' font-weight='900'%3EJT%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header solid" data-header>
+    <nav class="navbar container" aria-label="التنقل الرئيسي">
+      <a class="brand" href="index.html"><span class="brand-logo">JT</span><span class="brand-text">Joker <strong>Team</strong></span></a>
+      <ul class="nav-links"><li><a href="index.html">الرئيسية</a></li><li><a href="products.html">المتجر</a></li><li><a href="offers.html">العروض</a></li><li><a href="about.html">من نحن</a></li><li><a href="contact.html">تواصل</a></li></ul>
+      <div class="nav-actions"><a class="icon-btn" href="search.html" aria-label="البحث">⌕</a><a class="icon-btn active" href="cart.html" aria-label="السلة">🛒<span class="cart-count" data-cart-count>0</span></a><button class="menu-toggle" type="button" data-menu-toggle aria-label="فتح القائمة"><span></span><span></span><span></span></button></div>
+    </nav>
+  </header>
+  <aside class="mobile-drawer" data-mobile-drawer><div class="drawer-top"><span class="brand-logo">JT</span><button class="drawer-close" data-drawer-close>×</button></div><ul class="drawer-links"><li><a href="index.html">الرئيسية</a></li><li><a href="products.html">المتجر</a></li><li><a href="offers.html">العروض</a></li><li><a href="about.html">من نحن</a></li><li><a href="contact.html">تواصل</a></li></ul></aside>
+  <main class="page-main">
+    <section class="page-hero"><div class="container fade-in"><p class="breadcrumb">الرئيسية / السلة</p><h1>السلة والدفع</h1><p>راجع المنتجات، طبق الخصم، واكتب بيانات الطلب.</p></div></section>
+    <section class="section">
+      <div class="container checkout-layout">
+        <div class="checkout-card fade-in">
+          <h2>سلة المشتريات</h2>
+          <div class="cart-list" data-cart-list></div>
+          <div class="discount-box"><input type="text" data-discount-code placeholder="JOKER10" aria-label="كود الخصم"><button class="btn btn-primary" type="button" data-apply-discount>تطبيق</button></div>
+          <div class="summary-card" style="margin-top:16px">
+            <div class="summary-line"><span>المجموع</span><strong data-subtotal>0 جنيه</strong></div>
+            <div class="summary-line"><span>الخصم</span><strong data-discount>- 0 جنيه</strong></div>
+            <div class="summary-line"><span>التوصيل</span><strong data-shipping>0 جنيه</strong></div>
+            <div class="summary-line total"><span>الإجمالي</span><strong data-total>0 جنيه</strong></div>
+          </div>
+        </div>
+        <form class="checkout-card fade-in" data-validate-form data-clear-cart="true" data-success-toast="تم استلام طلبك ✓">
+          <h2>تفاصيل الطلب</h2>
+          <div class="form-grid">
+            <div class="field"><label for="name">اسم العميل</label><input id="name" name="name" required><span class="error"></span></div>
+            <div class="field"><label for="phone">رقم الموبايل</label><input id="phone" name="phone" required inputmode="tel" placeholder="01XXXXXXXXX"><span class="error"></span></div>
+            <div class="field full"><label for="address">العنوان كامل</label><textarea id="address" name="address" required></textarea><span class="error"></span></div>
+            <div class="field"><label for="governorate">المحافظة</label><select id="governorate" name="governorate" required data-governorate></select><span class="error"></span></div>
+            <div class="field"><label for="city">المدينة</label><select id="city" name="city" required data-city><option value="">اختر المدينة</option></select><span class="error"></span></div>
+            <div class="field full"><label class="payment-option"><input type="radio" name="payment" checked> الدفع عند الاستلام</label><span class="error"></span></div>
+          </div>
+          <button class="btn btn-primary btn-full" type="submit">تأكيد الطلب</button>
+          <div class="success-message" data-success>تم استلام طلبك ✓ هنتواصل معاك لتأكيد التفاصيل.</div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container copyright">Copyright 2026 Joker Team. جميع الحقوق محفوظة.</div></footer>
+  <nav class="bottom-nav"><a href="index.html">الرئيسية</a><a href="products.html">المتجر</a><a href="search.html">البحث</a><a href="cart.html">السلة</a></nav>
+  <button class="scroll-top" data-scroll-top aria-label="الرجوع للأعلى">↑</button>
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
