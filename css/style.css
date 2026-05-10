@@ -1121,3 +1121,44 @@ textarea { min-height: 130px; resize: vertical; }
     max-height: 280px !important;
   }
 }
+@media (max-width: 768px) {
+
+  body {
+    background: #f6f7fb !important;
+  }
+
+  body::before,
+  body::after,
+  .hero::before,
+  .hero::after,
+  .hero-bg::before,
+  .hero-bg::after {
+    content: none !important;
+    display: none !important;
+  }
+
+  .header,
+  .site-header {
+    position: sticky !important;
+    top: 0;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+
+  img {
+    content-visibility: auto;
+  }
+
+  .product,
+  .product-card,
+  .cat,
+  .category-card,
+  .hero-img {
+    will-change: auto !important;
+    transform: none !important;
+    filter: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+
+}
